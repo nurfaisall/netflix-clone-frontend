@@ -1,0 +1,38 @@
+.contain{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(185, 13, 13);
+}
+
+.poster {
+
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width : 900px) {
+    .contain {
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .poster {
+        width: 100vw;
+        height: 400px;
+    }
+    
+}
+
+.poster-text {
+    margin-left: 20px;
+    align-self: center;
+    color: white;
+}
+
+table {
+    margin-top: 20px;
+    width: 500px;
+}

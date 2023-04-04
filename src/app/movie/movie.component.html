@@ -1,0 +1,36 @@
+<div class="text-white contain">
+  <img
+    src="https://image.tmdb.org/t/p/original/{{ movieDetail.backdrop_path }}"
+    alt=""
+    class="poster"
+  />
+  <div class="poster-text">
+    <h2 class="poster-text">{{ movieDetail.title }}</h2>
+    <p class="poster-text" class="m-0">{{ movieDetail.overview }}</p>
+    <table>
+      <tr>
+        <td>Adult</td>
+        <td>{{ movieDetail.adult }}</td>
+      </tr>
+      <tr *ngFor="let movieD of movieDetail.genres; let i = index">
+        <td *ngIf="i === 0">Genres</td>
+        <td *ngIf="i != 0"></td>
+        <td>{{ movieD.name }}</td>
+      </tr>
+      <tr
+        *ngFor="let movieD of movieDetail.production_companies; let i = index"
+      >
+        <td *ngIf="i === 0">Production Companies</td>
+        <td *ngIf="i != 0"></td>
+        <td>{{ movieD.name }}</td>
+      </tr>
+      <tr
+        *ngFor="let movieD of movieDetail.production_countries; let i = index"
+      >
+        <td *ngIf="i === 0">Production Countries</td>
+        <td *ngIf="i != 0"></td>
+        <td>{{ movieD.name }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

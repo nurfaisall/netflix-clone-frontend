@@ -1,0 +1,77 @@
+.carousel-inner {
+    height: 700px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+
+.rowposter {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: horizontal;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transform: rotate(-90deg) translateY(-100px);
+}
+
+.horizontal-scroll-wrapper {
+    width: 330px;
+    height: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transform: rotate(-90deg) translateY(-400px);
+    z-index: 0;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scroll-wrapper> a >img {
+    margin-left: -50px;
+    margin-bottom: -90px;
+    
+    width: 200px;
+    height: 300px;
+    transform: rotate(90deg) translatey(-110px);
+    object-fit: cover;
+    transition: all;
+    transition-duration: 300ms;
+    display: block;
+
+}
+
+.horizontal-scroll-wrapper> a> img:hover, .horizontal-scroll-wrapper> div> .judul {
+    scale: 1.08;
+    cursor: pointer;
+}
+
+.judul {
+    z-index: 99999;
+    position: absolute;
+    color: red;
+    font: bold;
+    scale: 1.4;
+    transform: translateX(20px);
+}
+
+.asd {
+    position: relative;
+}
+
+.buttron{
+    position: absolute;
+    display: block;
+    z-index: 9999999;
+    background-color: rgba(216, 19, 19, 0.904);
+    color: seashell;
+}
+
+.buttron:hover {
+    background-color: rgb(148, 37, 37);
+}

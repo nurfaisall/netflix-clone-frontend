@@ -1,0 +1,14 @@
+<form #search="ngForm" (ngSubmit)="searchQuery(search)" class="mt-5">
+    <input type="text" name="query" ngModel>
+    <button type="submit">lorem ipsum</button>
+</form>
+
+<div class="container containes bg-danger">
+    <div class="" *ngFor="let searchR of searchResult">
+        <div>
+            <img src="https://image.tmdb.org/t/p/original/{{ searchR.poster_path }}" alt="">
+            <a class="text-white" routerLink="../movie/{{searchR.id}}">{{searchR.title}}</a>
+        </div>
+    </div>
+
+</div>
